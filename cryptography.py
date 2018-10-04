@@ -10,7 +10,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 func=input("Enter e to encrypt, d to decrypt, or q to quit: ")
-for c in func:
+while func !='q':
     print(c)
     if c=='q':
         print('Goodbye!')
