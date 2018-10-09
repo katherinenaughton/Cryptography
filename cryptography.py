@@ -19,6 +19,6 @@ while f!='q':
         print(k)
         m2=m[:]
         print(m2)
-    elif f!='e' or f!='d':
+    elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
 print('Goodbye!')
