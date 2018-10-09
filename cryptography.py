@@ -17,6 +17,6 @@ while !='q':
         k=input("Key: ")
         print(m)
         print(k)
-    else: print("Did not understand command, try again.")
-if f=='q':
-    print('Goodbye!')
+    else: 
+        print("Did not understand command, try again.")
+print('Goodbye!')
