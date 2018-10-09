@@ -17,6 +17,8 @@ while f!='q':
         k=input("Key: ")
         print(m)
         print(k)
+        m2=m[:]
+        print(m2)
     else: 
         print("Did not understand command, try again.")
 print('Goodbye!')
