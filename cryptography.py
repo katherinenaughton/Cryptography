@@ -40,13 +40,19 @@ while f!='q':
         
         # if message length=key length
         if lenm<=lenk:
-            e1=list(zip(m1, k1))
-            print(e1)
-            e2=[]
-            for c in e1:
+            ezip=list(zip(m1, k1))
+            print(ezip)
+            eadd=[]
+            for c in ezip:
                 num2=(c[0]+c[1])
-                e2.append(num2)
-            print(e2)
+                eadd.append(num2)
+            print(eadd)
+            
+            ee=[]
+            for b in eeadd:
+                e3=associations[b]
+            print(e3)
+            
             
     elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
