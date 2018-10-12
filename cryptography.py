@@ -17,16 +17,30 @@ while f!='q':
         k=input("Key: ")
         print(m)
         print(k)
+        
+        #number associations for message
         m1=[]
         for i in m: 
             num=associations.find(i)
             m1.append(num)
         print(m1)
+        
+        #number associations for key
         k1=[]
         for j in k:
             num=associations.find(j)
             k1.append(num)
         print(k1)
+        
+        lenm=len(m)
+        print(lenm)
+        lenk=len(k)
+        print(lenk)
+        
+        if lenm=<lenk:
+            e1=m1+k1
+            print(e1)
+            
     elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
 print('Goodbye!')
