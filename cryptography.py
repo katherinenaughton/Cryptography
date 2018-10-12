@@ -38,6 +38,9 @@ while f!='q':
         lenk=len(k)
         print(lenk)
         
+        key1=k*
+        #add extra k+m after remainder =0
+        
         # if message length=key length
         if lenm<=lenk:
             ezip=list(zip(m1, k1))
@@ -57,6 +60,8 @@ while f!='q':
             for i in efinal:
                 output += i+""
             print(output)
+        
+        
             
             
             
