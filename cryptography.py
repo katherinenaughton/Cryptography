@@ -42,8 +42,11 @@ while f!='q':
         if lenm<=lenk:
             e1=list(zip(m1, k1))
             print(e1)
+            e2=[]
             for c in e1:
-                print([0]+[1])
+                num2=(c[0]+c[1])
+                e2.append(num2)
+            print(e2)
             
     elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
