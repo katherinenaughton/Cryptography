@@ -32,14 +32,18 @@ while f!='q':
             k1.append(num)
         print(k1)
         
+        #lengths of message and key
         lenm=len(m)
         print(lenm)
         lenk=len(k)
         print(lenk)
         
-        if lenm=<lenk:
-            e1=m1+k1
+        # if message length=key length
+        if lenm<=lenk:
+            e1=list(zip(m1, k1))
             print(e1)
+            for c in e1:
+                print([0]+[1])
             
     elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
