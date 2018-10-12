@@ -48,10 +48,16 @@ while f!='q':
                 eadd.append(num2)
             print(eadd)
             
-            ee=[]
-            for b in eeadd:
-                e3=associations[b]
-            print(e3)
+            efinal=[]
+            for b in eadd:
+                eletter=associations[b]
+                efinal.append(eletter)
+            print(efinal)
+            output=""
+            for i in efinal:
+                output += i+""
+            print(output)
+            
             
             
     elif f!='e' and f!='d' and f!='q':
