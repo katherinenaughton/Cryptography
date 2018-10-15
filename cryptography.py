@@ -59,7 +59,7 @@ while f!='q':
         k4=k2 + k3 
         
         #encrypt
-        if f='e':
+        if f=='e':
             ezip=list(zip(m1, k4))
             print(ezip)
             eadd=[]
