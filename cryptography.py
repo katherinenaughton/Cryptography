@@ -37,6 +37,8 @@ while f!='q':
         print(lenm)
         lenk=len(k)
         print(lenk)
+        lena=len(associations)
+        print(lena)
     
         #remainder
         rem=(lenm%lenk)
@@ -65,7 +67,11 @@ while f!='q':
             eadd=[]
             for c in ezip:
                 num2=(c[0]+c[1])
-                eadd.append(num2)
+                if num2>84:
+                    num3=num2-85
+                eadd.append(num3)
+                else: 
+                    eadd.append(num2)
             print(eadd)
                 
             efinal=[]
@@ -85,7 +91,12 @@ while f!='q':
             dadd=[]
             for c in dzip:
                 dnum2=(c[1]-c[0])
-                dadd.append(dnum2)
+                if dnum2<0:
+                    dnum3=dnum2+85
+                dadd.append(dnum3)
+                
+                else:
+                    dadd.append(dnum2)
             print(dadd)
                 
             dfinal=[]
@@ -97,10 +108,7 @@ while f!='q':
             for i in dfinal:
                 output += i+""
             print(output)
-        
-            
-            
-        
+    
     elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
 print('Goodbye!')
