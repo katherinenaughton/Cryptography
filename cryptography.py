@@ -57,7 +57,7 @@ while f!='q':
         
         #when remainder isn't 0
         if rem!=0:
-            k2=k1*div 
+            k2=k1*div +  
         
         
         
