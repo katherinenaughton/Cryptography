@@ -69,7 +69,7 @@ while f!='q':
                 num2=(c[0]+c[1])
                 if num2>84:
                     num3=num2-85
-                eadd.append(num3)
+                    eadd.append(num3)
                 else: 
                     eadd.append(num2)
             print(eadd)
@@ -90,10 +90,10 @@ while f!='q':
             print(dzip)
             dadd=[]
             for c in dzip:
-                dnum2=(c[1]-c[0])
+                dnum2=(c[0]-c[1])
                 if dnum2<0:
                     dnum3=dnum2+85
-                dadd.append(dnum3)
+                    dadd.append(dnum3)
                 
                 else:
                     dadd.append(dnum2)
@@ -112,3 +112,4 @@ while f!='q':
     elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
 print('Goodbye!')
+
