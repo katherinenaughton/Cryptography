@@ -54,7 +54,7 @@ while f!='q':
         
         #when remainder isn't 0
         k3=[]
-        for i in m1[0:(rem)]:
+        for i in k1[0:(rem)]:
             k3.append(i)
         print(k3)
                 
