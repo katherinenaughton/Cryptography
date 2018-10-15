@@ -56,7 +56,16 @@ while f!='q':
         print(k2)
         
         #when remainder isn't 0
-        if rem!=0:
+         if rem!=0:
+            k2=k3
+            k3=[]
+            for i in range(rem):
+                for j in (m1,:
+                    k3.append(
+    
+            print
+                
+        
             k2=k1*div +  
         
         
