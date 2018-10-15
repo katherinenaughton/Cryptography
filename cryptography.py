@@ -95,7 +95,7 @@ while f!='q':
             print(dfinal)
             output=""
             for i in dfinal:
-                output += i+""
+                output -= i+""
             print(output)
         
             
