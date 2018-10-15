@@ -37,31 +37,38 @@ while f!='q':
         print(lenm)
         lenk=len(k)
         print(lenk)
-        
+    
         rem=(lenm%lenk)
         print(rem)
+        
+        div=lenm/lenk
+        print(div)
+        if rem==0:
+            k2=k1*div
+        print(k2)
+        
         add=lenk-rem
         print(add)
         
         # if message length=key length
-        if lenm<=lenk:
-            ezip=list(zip(m1, k1))
-            print(ezip)
-            eadd=[]
-            for c in ezip:
-                num2=(c[0]+c[1])
-                eadd.append(num2)
-            print(eadd)
+    
+        ezip=list(zip(m1, k2))
+        print(ezip)
+        eadd=[]
+        for c in ezip:
+            num2=(c[0]+c[1])
+            eadd.append(num2)
+        print(eadd)
             
-            efinal=[]
-            for b in eadd:
-                eletter=associations[b]
-                efinal.append(eletter)
-            print(efinal)
-            output=""
-            for i in efinal:
-                output += i+""
-            print(output)
+        efinal=[]
+        for b in eadd:
+            eletter=associations[b]
+            efinal.append(eletter)
+        print(efinal)
+        output=""
+        for i in efinal:
+            output += i+""
+        print(output)
         
         
             
