@@ -60,10 +60,10 @@ while f!='q':
             k2=k3
             k3=[]
             for i in range(rem):
-                for j in (m1,:
-                    k3.append(
+                for j in [m1:-1]:
+                    k3.append(m1)
     
-            print
+            print(k3)
                 
         
             k2=k1*div +  
