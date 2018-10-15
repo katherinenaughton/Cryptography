@@ -56,12 +56,10 @@ while f!='q':
         print(k2)
         
         #when remainder isn't 0
-         if rem!=0:
-            k2=k3
+         elif rem!=0:
             k3=[]
-            for i in range(rem):
-                for j in [m1:-1]:
-                    k3.append(m1)
+            for i in m1[0:rem-1:-1]:
+                    k3.append(i)
     
             print(k3)
                 
