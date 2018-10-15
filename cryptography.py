@@ -77,6 +77,24 @@ while f!='q':
             output += i+""
         print(output)
         
+        #decrypt
+        dzip=list(zip(m1, k4))
+        print(dzip)
+        dadd=[]
+        for c in dzip:
+            dnum2=(c[1]-c[0])
+            dadd.append(dnum2)
+        print(dadd)
+            
+        dfinal=[]
+        for b in dadd:
+            dletter=associations[b]
+            dfinal.append(dletter)
+        print(dfinal)
+        output=""
+        for i in dfinal:
+            output += i+""
+        print(output)
         
             
             
