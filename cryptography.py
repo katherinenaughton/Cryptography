@@ -38,8 +38,10 @@ while f!='q':
         lenk=len(k)
         print(lenk)
         
-        key1=k*
-        #add extra k+m after remainder =0
+        rem=(lenm%lenk)
+        print(rem)
+        add=lenk-rem
+        print(add)
         
         # if message length=key length
         if lenm<=lenk:
