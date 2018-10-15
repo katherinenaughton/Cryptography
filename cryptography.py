@@ -38,6 +38,7 @@ while f!='q':
         lenk=len(k)
         print(lenk)
     
+        #adjustement factor
         rem=(lenm%lenk)
         print(rem)
         
@@ -50,8 +51,7 @@ while f!='q':
         add=lenk-rem
         print(add)
         
-        # if message length=key length
-    
+        #encrypt
         ezip=list(zip(m1, k2))
         print(ezip)
         eadd=[]
