@@ -59,46 +59,48 @@ while f!='q':
         k4=k2 + k3 
         
         #encrypt
-        ezip=list(zip(m1, k4))
-        print(ezip)
-        eadd=[]
-        for c in ezip:
-            num2=(c[0]+c[1])
-            eadd.append(num2)
-        print(eadd)
-            
-        efinal=[]
-        for b in eadd:
-            eletter=associations[b]
-            efinal.append(eletter)
-        print(efinal)
-        output=""
-        for i in efinal:
-            output += i+""
-        print(output)
+        if f='e':
+            ezip=list(zip(m1, k4))
+            print(ezip)
+            eadd=[]
+            for c in ezip:
+                num2=(c[0]+c[1])
+                eadd.append(num2)
+            print(eadd)
+                
+            efinal=[]
+            for b in eadd:
+                eletter=associations[b]
+                efinal.append(eletter)
+            print(efinal)
+            output=""
+            for i in efinal:
+                output += i+""
+            print(output)
         
         #decrypt
-        dzip=list(zip(m1, k4))
-        print(dzip)
-        dadd=[]
-        for c in dzip:
-            dnum2=(c[1]-c[0])
-            dadd.append(dnum2)
-        print(dadd)
-            
-        dfinal=[]
-        for b in dadd:
-            dletter=associations[b]
-            dfinal.append(dletter)
-        print(dfinal)
-        output=""
-        for i in dfinal:
-            output += i+""
-        print(output)
+        if f=='d':
+            dzip=list(zip(m1, k4))
+            print(dzip)
+            dadd=[]
+            for c in dzip:
+                dnum2=(c[1]-c[0])
+                dadd.append(dnum2)
+            print(dadd)
+                
+            dfinal=[]
+            for b in dadd:
+                dletter=associations[b]
+                dfinal.append(dletter)
+            print(dfinal)
+            output=""
+            for i in dfinal:
+                output += i+""
+            print(output)
         
             
             
-            
+        
     elif f!='e' and f!='d' and f!='q':
         print("Did not understand command, try again.")
 print('Goodbye!')
