@@ -15,55 +15,55 @@ while f!='q':
     if f== 'e' or f=='d':
         m=input("Message: ")
         k=input("Key: ")
-        print(m)
-        print(k)
+        #print(m)
+        #print(k)
         
         #number associations for message
         m1=[]
         for i in m: 
             num=associations.find(i)
             m1.append(num)
-        print(m1)
+        #print(m1)
         
         #number associations for key
         k1=[]
         for j in k:
             num=associations.find(j)
             k1.append(num)
-        print(k1)
+        #print(k1)
         
         #lengths of message and key
         lenm=len(m)
-        print(lenm)
+        #print(lenm)
         lenk=len(k)
-        print(lenk)
+        #print(lenk)
         lena=len(associations)
-        print(lena)
+        #print(lena)
     
         #remainder
         rem=(lenm%lenk)
-        print(rem)
+        #print(rem)
         
         #divisor
         div=int(lenm/lenk)
-        print(div)
+        #print(div)
         
         #when remainder is 0
         k2=k1*div
-        print(k2)
+        #print(k2)
         
         #when remainder isn't 0
         k3=[]
         for i in k1[0:(rem)]:
             k3.append(i)
-        print(k3)
+        #print(k3)
                 
         k4=k2 + k3 
         
         #encrypt
         if f=='e':
             ezip=list(zip(m1, k4))
-            print(ezip)
+            #print(ezip)
             eadd=[]
             for c in ezip:
                 num2=(c[0]+c[1])
@@ -72,13 +72,13 @@ while f!='q':
                     eadd.append(num3)
                 else: 
                     eadd.append(num2)
-            print(eadd)
+            #print(eadd)
                 
             efinal=[]
             for b in eadd:
                 eletter=associations[b]
                 efinal.append(eletter)
-            print(efinal)
+            #print(efinal)
             output=""
             for i in efinal:
                 output += i+""
@@ -87,7 +87,7 @@ while f!='q':
         #decrypt
         if f=='d':
             dzip=list(zip(m1, k4))
-            print(dzip)
+            #print(dzip)
             dadd=[]
             for c in dzip:
                 dnum2=(c[0]-c[1])
@@ -97,13 +97,13 @@ while f!='q':
                 
                 else:
                     dadd.append(dnum2)
-            print(dadd)
+            #print(dadd)
                 
             dfinal=[]
             for b in dadd:
                 dletter=associations[b]
                 dfinal.append(dletter)
-            print(dfinal)
+            #print(dfinal)
             output=""
             for i in dfinal:
                 output += i+""
