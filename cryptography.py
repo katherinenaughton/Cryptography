@@ -46,29 +46,20 @@ while f!='q':
         div=int(lenm/lenk)
         print(div)
         
-        #difference
-        diff=lenk-rem
-        print(diff)
-        
         #when remainder is 0
-        if rem==0:
-            k2=k1*div
+        k2=k1*div
         print(k2)
         
         #when remainder isn't 0
-        if rem!=0:
-            k3=[]
-            for i in m1[0:rem-1:-1]:
-                k3.append(i)
-            print(k3)
+        k3=[]
+        for i in m1[0:rem-1:-1]:
+            k3.append(i)
+        print(k3)
                 
-        
-        k2=k1*div + k3 
-        
-        
+        k4=k2 + k3 
         
         #encrypt
-        ezip=list(zip(m1, k2))
+        ezip=list(zip(m1, k4))
         print(ezip)
         eadd=[]
         for c in ezip:
