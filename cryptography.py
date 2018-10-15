@@ -38,18 +38,28 @@ while f!='q':
         lenk=len(k)
         print(lenk)
     
-        #adjustement factor
+        #remainder
         rem=(lenm%lenk)
         print(rem)
         
-        div=lenm/lenk
+        #divisor
+        div=int(lenm/lenk)
         print(div)
+        
+        #difference
+        diff=lenk-rem
+        print(diff)
+        
+        #when remainder is 0
         if rem==0:
             k2=k1*div
         print(k2)
         
-        add=lenk-rem
-        print(add)
+        #when remainder isn't 0
+        if rem!=0:
+            k2=k1*div 
+        
+        
         
         #encrypt
         ezip=list(zip(m1, k2))
